@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image editor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+<body>
+    <div class="main">
+        <section>
+            <div class="left">
+            <div class="top">
+                <label for="image-input" class="btn">
+                    choose file 
+                    <input type="file" id="image-input" accept="image/*" hidden>
+                </label>
+                <button class="btn" id="reset-btn">reset</button>
+                <button class="btn"id="download-btn">download image</button>
+            </div>
+            <div class="bottom">
+                <div class="placeholder-img">
+                     <div class="placeholder">
+                     <i class="fa-regular fa-image"></i>
+                     <p>no image is choosen</p>
+                     </div>
+                     <canvas id="image-canvas">
+
+                </canvas>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right">
+            <h2>Filters</h2>
+           <div class="filters">
+            <div class="filter">
+           </div>
+           </div>
+        </div>
+  
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
